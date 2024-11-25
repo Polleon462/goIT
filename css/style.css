@@ -1,0 +1,12 @@
+.link {
+  color: black;
+}
+.link:hover,
+.link:focus {
+  color: brown;
+}
+
+.link:active {
+  color: blueviolet;
+  font-size: 30px;
+}
