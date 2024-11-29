@@ -1,0 +1,50 @@
+
+/* Створення CSS зміних */
+
+.list {
+  list-style: none;
+}
+
+
+/* Hero */
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Переваги */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Переваги */
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Замінити значення конктретно в заголовку секції Клеєнти */
+.clients > .section-title {
+  color: var(--primary-text-color);
+}
+
+/* Button */
+.button {
+  background-color: var(--primary-white-color);
+  color: var(--title-text-color);
+}
+
+/* Стиль основної кнопки */
+.button.primary {
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+}
+
+/* Стиль вториної кнопки */
+.button.secondary {
+  background-color: var(--primary-white-color);
+  color: var(--accent-text-color);
+}

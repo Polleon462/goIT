@@ -1,0 +1,44 @@
+/* 
+колір основного тексту - #000000
+вториний колір тексту - rgba(0,0,0,0.8)
+білий - #fffff
+акцент -#18A0FB
+вторичний фон #F5F5F5
+*/
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-text-color: #18a0fb;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+/* Logo */
+.logo {
+  color: var(--title-text-color);
+}
+
+.logo:hover {
+  color: var(--accent-text-color);
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--accent-text-color);
+}
+
+/* Site nav наведення */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
+
+/* Активна ссилка (та яка відкрита) */
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
