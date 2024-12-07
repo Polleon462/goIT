@@ -18,9 +18,9 @@ body {
   color: var(--primary-text-color);
   /* add font for all body */
   font-family: Montserrat, sans-serif;
-  letter-spacing: -0.015em; 
+  letter-spacing: -0.015em;
   font-size: 18px;
-  line-height: 1.67;  
+  line-height: 1.67;
 }
 
 /* Logo */
@@ -30,6 +30,8 @@ body {
 
   font-size: 28px;
   line-height: 1.14;
+
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -46,18 +48,25 @@ botton{
 .site-nav .link {
   color: var(--accent-text-color);
 
-  font-weight:500;
+  font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
+
+  text-decoration: none;
 }
 
 /* Site nav наведення */
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--title-text-color);
+
 }
 
 /* Активна ссилка (та яка відкрита) */
 .site-nav .link.current {
   color: var(--title-text-color);
+}
+
+.footer .link{
+  text-decoration: none;
 }

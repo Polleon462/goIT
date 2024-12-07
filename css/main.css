@@ -31,10 +31,14 @@
   font-weight: 700;
 }
 
-/* Замінити значення конктретно в заголовку секції Клеєнти */
+.section-descrition {
+  font-size: 39px;
+  line-height: 1.39;
+}
+/* Замінити значення конктретно в заголовку секції Клеєнти
 .clients > .section-title {
   color: var(--primary-text-color);
-}
+} */
 
 /* Button or auth-nav list*/
 .button {
@@ -44,6 +48,8 @@
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
+
+  text-decoration: none;
 }
 
 /* Стиль основної кнопки */
