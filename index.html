@@ -8,6 +8,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Lesson_1</title>
@@ -15,7 +21,7 @@
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <nav>
+      <nav class="container">
         <a href="./index.html" class="logo"
           ><img src="./imgs/logo.jpg" alt="tunel and guy" width="50" />Photo</a
         >
@@ -28,8 +34,8 @@
           <li><a href="./warfame.html" class="link">WareFrames</a></li>
         </ul>
         <ul class="auth-nav list">
-          <li><a href="#" class="button primary">Log in</a></li>
-          <li><a href="#" class="button">Register</a></li>
+          <li><a href="#" class="button secondary">Log in</a></li>
+          <li><a href="#" class="button primary">Register</a></li>
         </ul>
       </nav>
     </header>
@@ -43,130 +49,139 @@
 
       <!--Переваги  -->
       <section class="section">
-        <h2 class="section-title">
-          Snap photo and share like <br />
-          never before
-        </h2>
-        <ul class="feature-list list">
-          <li>
-            <h3 class="title">Send us picters</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
-              asperiores minus ipsam accusamus aperiam nisi.
-            </p>
-            <a href="#" class="button secondary">Learn more</a>
-          </li>
-          <li>
-            <h3 class="title">Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
-              asperiores minus ipsam accusamus aperiam nisi.
-            </p>
-            <a href="#" class="button secondary">Learn more</a>
-          </li>
-          <li>
-            <h3 class="title">Name eneim ipsu</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
-              asperiores minus ipsam accusamus aperiam nisi.
-            </p>
-            <a href="#" class="button secondary">Learn more</a>
-          </li>
-          <li>
-            <h3 class="title">tempor incidents</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
-              asperiores minus ipsam accusamus aperiam nisi.
-            </p>
-            <a href="#" class="button secondary">Learn more</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">
+            Snap photo and share like <br />
+            never before
+          </h2>
+          <ul class="feature-list list">
+            <li>
+              <h3 class="title">Send us picters</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                asperiores minus ipsam accusamus aperiam nisi.
+              </p>
+              <a href="#" class="button secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Lorem, ipsum dolor.</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                asperiores minus ipsam accusamus aperiam nisi.
+              </p>
+              <a href="#" class="button secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Name eneim ipsu</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                asperiores minus ipsam accusamus aperiam nisi.
+              </p>
+              <a href="#" class="button secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">tempor incidents</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                asperiores minus ipsam accusamus aperiam nisi.
+              </p>
+              <a href="#" class="button secondary">Learn more</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Приклади робіт -->
-      <section class="section works">
-        <h2 class="section-title">Exemples of work</h2>
-        <ul class="work-list list">
-          <li>
-            <img src="imgs/zaglushka.jpg" alt="photo1" width="750" />
-            <h3 class="title">Send us picters with you</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, nesciunt!
-            </p>
-          </li>
-          <li>
-            <img src="imgs/zaglushka.jpg" alt="photo2" width="750" />
-            <h3 class="title">Send us picters with you</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, nesciunt!
-            </p>
-          </li>
-        </ul>
+      <section class="section no-padding">
+        <div class="container">
+          <h2 class="section-title">Exemples of work</h2>
+          <ul class="work-list list">
+            <li class="item">
+              <img src="imgs/zaglushka.jpg" alt="photo1" width="750" />
+              <h3 class="title">Send us picters with you</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, nesciunt!
+              </p>
+            </li>
+            <li class="item">
+              <img src="imgs/zaglushka.jpg" alt="photo2" width="750" />
+              <h3 class="title">Send us picters with you</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, nesciunt!
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Клієнти -->
       <section class="section">
-        <h2 class="section-title">You`re in good company</h2>
-        <p class="section-descrition">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          inventore, amet consectetur sunt repellendus necessitatibus!
-        </p>
-        <ul class="list">
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
-            /></a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title center">You`re in good company</h2>
+          <p class="section-descrition">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis inventore, amet consectetur sunt repellendus
+            necessitatibus!
+          </p>
+          <ul class="list">
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="imgs/zaglushka.jpg" alt="photos" width="65"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Реєстрація -->
       <section class="section">
-        <p class="section-descrition">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-          quo?
-        </p>
-        <!-- кнопкоссилки -->
-        <div>
-          <a href="#" class="button primary">join today</a>
-          <a href="#" class="button secondary">Contact us</a>
+        <div class="container">
+          <p class="section-descrition">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, quo?
+          </p>
+          <!-- кнопкоссилки -->
+          <div>
+            <a href="#" class="button primary">join today</a>
+            <a href="#" class="button secondary">Contact us</a>
+          </div>
         </div>
       </section>
 
