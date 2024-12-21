@@ -18,6 +18,13 @@ body {
   line-height: 1.67;
 }
 
+/* утиліти */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -51,16 +58,48 @@ botton{
   font-family: inherite;
 }
 */
+/* main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 /* Site nav */
-.site-nav .link {
-  color: var(--accent-text-color);
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
 
+/* .site-nav .item {
+  outline: 1px solid red;
+} */
+
+/* .site-nav .item:last-child {
+  margin-right: 0;
+} */
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
+.site-nav .link {
+  /* Блочна модель */
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  /* Оформлення тексту */
+  color: var(--accent-text-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
-
   text-decoration: none;
+
+  /* Анімації і тд */
 }
 
 /* Site nav наведення */
@@ -74,14 +113,17 @@ botton{
   color: var(--title-text-color);
 }
 
-.footer .link {
-  text-decoration: none;
+.auth-nav {
+  display: flex;
+  margin-left: auto;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.auth-nav .item + .item {
+  margin-left: 12px;
+}
+
+.footer .link {
+  text-decoration: none;
 }
 
 /* Hero */
@@ -117,8 +159,21 @@ botton{
   font-weight: 400;
 }
 
-.section-title.center {
+.section-title.centered,
+.section-descrition.centered {
   text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+
+/* 1200 - 150=1050 /2 = 525 */
+.feature-list .item {
+  width: 500px;
+  margin: 40px 75px;
 }
 
 /* Переваги та приклади робіт Feature & Exemples*/
@@ -139,12 +194,25 @@ botton{
 }
 
 .work-list > .item {
+  display: flex;
+  align-items: center;
+
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--primary-white-color);
 }
+
 .work-list > .item:nth-child(2n) {
   background-color: var(--secondary-bg-color);
+  flex-direction: row-reverse;
+}
+
+.work-list > .item:nth-child(2n-1) .content {
+  margin-left: 60px;
+}
+
+.work-list > .item:nth-child(2n) .content {
+  margin-right: 60px;
 }
 
 .section-descrition {
@@ -152,6 +220,19 @@ botton{
   margin-bottom: 80px;
   font-size: 39px;
   line-height: 1.39;
+}
+
+.clien-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: -30px -30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clien-list .item {
+  margin: 30px 30px;
 }
 
 /* Замінити значення конктретно в заголовку секції Клеєнти
